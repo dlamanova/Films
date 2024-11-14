@@ -8,9 +8,36 @@ namespace Film.Controllers
     {
         private static IList<Films> films = new List<Films>
         {
-            new Films(){ Id = 1, Name = "Film1", Description = "Descr1", Price = 0},
-            new Films(){ Id = 2, Name = "Film2", Description = "Descr2", Price = 0},
-            new Films(){ Id = 3, Name = "Film3", Description = "Descr3", Price = 0},
+            new Films()
+            { 
+                Id = 1, 
+                Name = "Phantom of the Opera", 
+                Description = "Based on a 1910 novel by Gaston Leroux, The Phantom of the Opera tells " +
+                "the tale of a disfigured musical genius who haunts the Paris Opera House. Mesmerised by " +
+                "the talents and beauty of the young soprano Christine, the Phantom lures her as his " +
+                "protégé and falls fiercely in love with her.", 
+                Price = 0
+            },
+             
+            new Films()
+            { 
+                Id = 2, 
+                Name = "Beauty and the Beast", 
+                Description = "A young Prince, imprisoned in the form of a Beast (Dan Stevens), " +
+                "can be freed only by true love. What may be his only opportunity arrives when he" +
+                " meets Belle (Emma Watson), the only human girl to ever visit the castle since it was enchanted.", 
+                Price = 0
+            },
+            new Films()
+            { 
+                Id = 3, 
+                Name = "Perfume: The Story of a Murder", 
+                Description = "Jean-Baptiste Grenouille, born with a superior olfactory sense, " +
+                "creates the world's finest perfume. His work, however, takes a dark turn as he " +
+                "searches for the ultimate scent. Jean-Baptiste Grenouille, born with " +
+                "a superior olfactory sense, creates the world's finest perfume.", 
+                Price = 0
+            },
         };
         // GET: FilmController
         public ActionResult Index()
